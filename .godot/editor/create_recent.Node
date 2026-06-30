@@ -1,4 +1,8 @@
+Camera3D
+CSGBox3D
+DirectionalLight3D
+Area3D
+CollisionShape3D
 Marker3D
 RayCast3D
-CollisionShape3D
 RigidBody3D

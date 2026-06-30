@@ -16,16 +16,16 @@ transform = Transform3D(1, 0, 0, 0, -0.0010642249, -0.9999994, 0, 0.9999994, -0.
 shape = SubResource("BoxShape3D_liir1")
 
 [node name="RayCastFR" type="RayCast3D" parent="." unique_id=959808217]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.25, 0.15, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.15, 0.5)
 
 [node name="RayCastFL" type="RayCast3D" parent="." unique_id=1056268018]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.25, 0.15, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.15, 0.5)
 
 [node name="RayCastRL" type="RayCast3D" parent="." unique_id=2032986187]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.25, 0.15, -0.128)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.15, -0.128)
 
 [node name="RayCastRR" type="RayCast3D" parent="." unique_id=544280445]
-transform = Transform3D(0.365, 0, 0, 0, 0.5, 0, 0, 0, 0.365, -0.25, 0.15, -0.128)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.15, -0.128)
 
 [node name="FR_Pos" type="Marker3D" parent="." unique_id=259509508]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.15, 0.5)

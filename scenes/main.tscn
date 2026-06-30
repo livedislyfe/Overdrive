@@ -1,3 +1,26 @@
 [gd_scene format=3 uid="uid://xa5qg4fmx16k"]
 
+[ext_resource type="PackedScene" uid="uid://d21qwhis2nga1" path="res://scenes/player.tscn" id="1_o5qli"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2els"]
+albedo_color = Color(0, 1, 1, 1)
+distance_fade_mode = 3
+
 [node name="main" type="Node3D" unique_id=1714912692]
+
+[node name="player" parent="." unique_id=21867909 instance=ExtResource("1_o5qli")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029307246, 1.109761, -0.26890635)
+
+[node name="Camera3D" type="Camera3D" parent="player" unique_id=1490989874]
+transform = Transform3D(-0.99938214, 0, -0.03514797, 0, 1, 0, 0.03514797, 0, -0.99938214, 0, 2.2292633, -4.3262215)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1185631949]
+transform = Transform3D(102.95403, 0, 0, 0, 0.58905274, 0, 0, 0, 2422.3154, 0, -0.46155882, 0)
+use_collision = true
+material = SubResource("StandardMaterial3D_g2els")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D" unique_id=600220647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.07028786, 0.033833217, 3.5775275, 0.25505948)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=144160694]
+transform = Transform3D(0.9471618, 0, 0.32075655, -0.21195062, 0.7505766, 0.6258688, -0.24075235, -0.6607835, 0.71091753, 0, 7.117729, 0)
