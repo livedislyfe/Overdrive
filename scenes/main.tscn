@@ -4,7 +4,7 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g2els"]
 albedo_color = Color(0, 1, 1, 1)
-distance_fade_mode = 3
+distance_fade_mode = 1
 
 [node name="main" type="Node3D" unique_id=1714912692]
 
@@ -15,7 +15,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029307246, 1.109761, -0.268
 transform = Transform3D(-0.99938214, 0, -0.03514797, 0, 1, 0, 0.03514797, 0, -0.99938214, 0, 2.2292633, -4.3262215)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1185631949]
-transform = Transform3D(102.95403, 0, 0, 0, 0.58905274, 0, 0, 0, 2422.3154, 0, -0.46155882, 0)
+transform = Transform3D(102.954025, 0, 0, 0, 0.5577034, 779.6978, 0, -0.189605, 2293.4, 0, -0.46155882, 0)
 use_collision = true
 material = SubResource("StandardMaterial3D_g2els")
 
