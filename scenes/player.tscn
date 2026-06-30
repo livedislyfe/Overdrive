@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://d21qwhis2nga1"]
+
+[ext_resource type="PackedScene" uid="uid://cowkuf8l3r1bp" path="res://assets/ships/STRGN.gltf" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://cpqy8ffijteut" path="res://scripts/player.gd" id="1_g2els"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_liir1"]
+size = Vector3(0.77072144, 1.4644165, 0.52563477)
+
+[node name="player" type="RigidBody3D" unique_id=21867909]
+script = ExtResource("1_g2els")
+
+[node name="blockbench_export" parent="." unique_id=1288981912 instance=ExtResource("1_3vyb7")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=917738927]
+transform = Transform3D(1, 0, 0, 0, -0.0010642249, -0.9999994, 0, 0.9999994, -0.0010642249, -0.00092095137, 0.31577802, 0.13199437)
+shape = SubResource("BoxShape3D_liir1")
+
+[node name="RayCastFR" type="RayCast3D" parent="." unique_id=959808217]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.25, 0.15, 0.5)
+
+[node name="RayCastFL" type="RayCast3D" parent="." unique_id=1056268018]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.25, 0.15, 0.5)
+
+[node name="RayCastRL" type="RayCast3D" parent="." unique_id=2032986187]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.25, 0.15, -0.128)
+
+[node name="RayCastRR" type="RayCast3D" parent="." unique_id=544280445]
+transform = Transform3D(0.365, 0, 0, 0, 0.5, 0, 0, 0, 0.365, -0.25, 0.15, -0.128)
+
+[node name="FR_Pos" type="Marker3D" parent="." unique_id=259509508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.15, 0.5)
+
+[node name="FL_Pos" type="Marker3D" parent="." unique_id=1284221575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.15, 0.5)
+
+[node name="RL_Pos" type="Marker3D" parent="." unique_id=1174771308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.15, -0.128)
+
+[node name="RR_Pos" type="Marker3D" parent="." unique_id=2139205631]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.15, -0.128)

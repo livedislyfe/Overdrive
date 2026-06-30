@@ -1,0 +1,16 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1782795388
+icon.svg::CompressedTexture2D::6178537399745306140::1782795184::1782795255::1::::<><><>0<>0<>753663b14bc40822af4afdc0d51619ae<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1782795184::0::1::::<><><>0<>0<><>::
+::res://assets/::1782790910
+::res://assets/map_meshes/::1782790901
+::res://assets/ships/::1782791098
+STRGN.gltf::PackedScene::5801544688846934913::1782791088::1782791097::1::::<><><>0<>0<>98a74d8577240218d2f2adbaada476a5<>res://.godot/imported/STRGN.gltf-1d5452c37b15543ef0fcdec168ad429c.scn::uid://c48r81btd3ik6::::res://assets/ships/STRGN_0.png
+STRGN_0.png::CompressedTexture2D::6877534786869305667::1782791095::1782791098::1::::<><><>0<>0<>d47f52d1e54b8c44f5202b0a99ccce4a<>res://.godot/imported/STRGN_0.png-19e151d634759fa59dff505d7456a96e.s3tc.ctex::
+::res://scenes/::1782794080
+main.tscn::PackedScene::1616193846343794280::1782791341::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::9109045791138225802::1782794080::0::1::::<><><>0<>0<><>::uid://cowkuf8l3r1bp::::res://assets/ships/STRGN.gltf<>uid://cpqy8ffijteut::::res://scripts/player.gd
+::res://scenes/maps/::1782790933
+::res://scenes/other/::1782790960
+::res://scripts/::1782793743
+player.gd::GDScript::5860220475763936307::1782793743::0::1::::<>RigidBody3D<><>0<>0<><>::
