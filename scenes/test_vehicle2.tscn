@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bdh56fk1h7us1"]
+
+[ext_resource type="Material" uid="uid://by5encxbbc8ur" path="res://prototype_textures/materials/blue_material.tres" id="1_t5hc8"]
+[ext_resource type="Script" uid="uid://ci7knpfu1b7r7" path="res://scripts/test_vehicle_2.gd" id="1_y8r24"]
+[ext_resource type="Material" uid="uid://cxei1ugbnqkws" path="res://prototype_textures/materials/black_material.tres" id="2_y8r24"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_tefeu"]
+size = Vector3(0.5, 0.1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l4tln"]
+size = Vector3(0.5, 0.1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_48vav"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 0.05
+
+[node name="VehicleBody3D" type="VehicleBody3D" unique_id=1124179004]
+script = ExtResource("1_y8r24")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1804670960]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("BoxMesh_tefeu")
+surface_material_override/0 = ExtResource("1_t5hc8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1809642003]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("BoxShape3D_l4tln")
+
+[node name="FL" type="VehicleWheel3D" parent="." unique_id=694103562]
+transform = Transform3D(-1, 8.742277e-08, 8.742278e-08, 8.742277e-08, 1, 1.8367231e-08, -8.742278e-08, 1.8367238e-08, -1, -0.8877715, -0.1, -0.9052001)
+use_as_steering = true
+wheel_roll_influence = 0.01
+wheel_rest_length = 0.05
+wheel_friction_slip = 0.5
+suspension_stiffness = 120.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="FL" unique_id=1675653755]
+transform = Transform3D(1.6896216e-06, 12.884682, 1.0471582e-13, 4.930416, -6.4654597e-07, 2.7253606e-07, 9.084535e-08, 3.6626048e-15, -4.9460554, -0.11703348, -1.1920929e-07, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("2_y8r24")
+
+[node name="FR" type="VehicleWheel3D" parent="." unique_id=729647410]
+transform = Transform3D(-1, 8.742277e-08, 8.742278e-08, 8.742277e-08, 1, 1.8367231e-08, -8.742278e-08, 1.8367238e-08, -1, 0.28, -0.1, -0.369)
+use_as_steering = true
+wheel_roll_influence = 0.01
+wheel_rest_length = 0.05
+wheel_friction_slip = 0.5
+suspension_stiffness = 120.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="FR" unique_id=691794094]
+transform = Transform3D(1.6896216e-06, 12.884682, 1.0471582e-13, 4.930416, -6.4654597e-07, 2.7253606e-07, 9.084535e-08, 3.6626048e-15, -4.9460554, -0.11703348, -1.1920929e-07, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("2_y8r24")
+
+[node name="BR" type="VehicleWheel3D" parent="." unique_id=1321747574]
+transform = Transform3D(-1, 8.742277e-08, 8.742278e-08, 8.742277e-08, 1, 1.8367231e-08, -8.742278e-08, 1.8367238e-08, -1, 0.28, -0.1, 0.369)
+use_as_traction = true
+wheel_roll_influence = 0.01
+wheel_rest_length = 0.05
+wheel_friction_slip = 0.4
+suspension_travel = 0.8
+suspension_stiffness = 80.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BR" unique_id=460306445]
+transform = Transform3D(1.6896216e-06, 12.884682, 1.0471582e-13, 4.930416, -6.4654597e-07, 2.7253606e-07, 9.084535e-08, 3.6626048e-15, -4.9460554, -0.11703348, -1.1920929e-07, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("2_y8r24")
+
+[node name="BL" type="VehicleWheel3D" parent="." unique_id=749772504]
+transform = Transform3D(-1, 8.742277e-08, 8.742278e-08, 8.742277e-08, 1, 1.8367231e-08, -8.742278e-08, 1.8367238e-08, -1, -0.28, -0.1, 0.369)
+use_as_traction = true
+wheel_roll_influence = 0.01
+wheel_rest_length = 0.05
+wheel_friction_slip = 0.4
+suspension_travel = 0.8
+suspension_stiffness = 80.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BL" unique_id=2095081542]
+transform = Transform3D(1.6896216e-06, 12.884682, 1.0471582e-13, 4.930416, -6.4654597e-07, 2.7253606e-07, 9.084535e-08, 3.6626048e-15, -4.9460554, -0.11703348, -1.1920929e-07, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("2_y8r24")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1292140461]
+transform = Transform3D(0.95881975, -0.10639401, 0.2633344, 0, 0.92718387, 0.3746066, -0.2840153, -0.3591802, 0.8890022, 0.90307385, 1.1435246, 1.2241613)

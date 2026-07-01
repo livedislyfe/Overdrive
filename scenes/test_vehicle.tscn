@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://da8oodmcp85gh"]
+
+[ext_resource type="Script" uid="uid://djant3w0frnf4" path="res://scripts/test_vehicle.gd" id="1_k22n7"]
+[ext_resource type="Material" uid="uid://btn0ydtcseo5b" path="res://prototype_textures/materials/yellow_material.tres" id="2_ho7ve"]
+[ext_resource type="Script" uid="uid://cru2otkvuwhd3" path="res://scripts/wheel.gd" id="3_ho7ve"]
+[ext_resource type="Material" uid="uid://cxei1ugbnqkws" path="res://prototype_textures/materials/black_material.tres" id="4_8p0ad"]
+
+[sub_resource type="Curve" id="Curve_8p0ad"]
+_data = [Vector2(0, 0.3), 0.0, 0.0, 0, 0, Vector2(0.3, 0.90000004), 0.0, 0.0, 0, 0, Vector2(0.6, 0.8), 0.0, 0.0, 0, 0, Vector2(1, 0.1), 0.0, 0.0, 0, 0]
+point_count = 4
+metadata/_snap_enabled = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_48vav"]
+size = Vector3(2, 0.5, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l4tln"]
+size = Vector3(0.65, 0.4, 1.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_48vav"]
+size = Vector3(2, 0.5, 4)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_48vav"]
+top_radius = 0.4
+bottom_radius = 0.4
+height = 0.15
+
+[node name="test_vehicle" type="RigidBody3D" unique_id=292287016 node_paths=PackedStringArray("wheels")]
+mass = 50.0
+script = ExtResource("1_k22n7")
+wheels = [NodePath("WheelFL"), NodePath("WheelRL"), NodePath("WheelRR"), NodePath("WheelFR")]
+max_speed = 60.0
+accel_curve = SubResource("Curve_8p0ad")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=913401413]
+mesh = SubResource("BoxMesh_48vav")
+surface_material_override/0 = ExtResource("2_ho7ve")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1539970008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4230256, -1.0897639)
+mesh = SubResource("BoxMesh_l4tln")
+surface_material_override/0 = ExtResource("2_ho7ve")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=628136558]
+shape = SubResource("BoxShape3D_48vav")
+
+[node name="WheelFR" type="RayCast3D" parent="." unique_id=1665933214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98, 0, 1.475)
+enabled = false
+script = ExtResource("3_ho7ve")
+spring_strength = 5000
+spring_damping = 120.0
+
+[node name="Wheel" type="MeshInstance3D" parent="WheelFR" unique_id=400594907]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("4_8p0ad")
+
+[node name="WheelFL" type="RayCast3D" parent="." unique_id=1678877139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9858022, 0, 1.4752321)
+enabled = false
+script = ExtResource("3_ho7ve")
+spring_strength = 5000
+spring_damping = 120.0
+
+[node name="Wheel" type="MeshInstance3D" parent="WheelFL" unique_id=611511494]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("4_8p0ad")
+
+[node name="WheelRL" type="RayCast3D" parent="." unique_id=2042688738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9858022, 0, -1.6300199)
+enabled = false
+script = ExtResource("3_ho7ve")
+spring_strength = 5000
+spring_damping = 120.0
+is_motor = true
+
+[node name="Wheel" type="MeshInstance3D" parent="WheelRL" unique_id=1799704270]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("4_8p0ad")
+
+[node name="WheelRR" type="RayCast3D" parent="." unique_id=301433426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9797659, 0, -1.6300199)
+enabled = false
+script = ExtResource("3_ho7ve")
+spring_strength = 5000
+spring_damping = 120.0
+is_motor = true
+
+[node name="Wheel" type="MeshInstance3D" parent="WheelRR" unique_id=83978291]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("CylinderMesh_48vav")
+surface_material_override/0 = ExtResource("4_8p0ad")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=305801242]
+top_level = true
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=539706638]
+transform = Transform3D(-1, -1.5180806e-08, 8.609462e-08, 0, 0.9848077, 0.17364818, -8.742278e-08, 0.17364818, -0.9848077, 0, 1.3554733, -4.331119)
+current = true
+
+[node name="ReverseCamera" type="Camera3D" parent="CameraPivot" unique_id=1236803504]
+transform = Transform3D(1, 0, 0, 0, 0.98480767, 0.17364816, 0, -0.17364816, 0.98480767, 0, 1.355, 4.331)

@@ -1,0 +1,199 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://b8ou311b2tj3i"
+path="res://.godot/imported/scene.gltf-30bc0a32e422974e819641d724b9bf76.scn"
+
+[deps]
+
+source_file="res://assets/testtrack/scene.gltf"
+dest_files=["res://.godot/imported/scene.gltf-30bc0a32e422974e819641d724b9bf76.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/180Turn_001_101/Object_206": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/180Turn_002_102/Object_208": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/180Turn_003_94/Object_192": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/30Turn_004_91/Object_186": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/3pneu_001_72/Object_148": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/90Turn_001_98/Object_200": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/90Turn_002_96/Object_196": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/90Turn_003_99/Object_202": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/90Turn_004_100/Object_204": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/FinishStart_001_79/Object_162": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/arrowsLeft_001_0/Object_4": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/arrowsLeft_002_1/Object_6": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersBigEnd_001_78/Object_160": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersBigMiddle_001_77/Object_158": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersBigStart_001_76/Object_156": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_001_68/Object_140": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_002_103/Object_210": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_003_105/Object_214": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_004_104/Object_212": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_005_106/Object_216": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_006_107/Object_218": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_007_108/Object_220": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_008_109/Object_222": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/barriersSmall_009_110/Object_224": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/bridge_001_83/Object_168": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/bridge_001_83/bridgeBarriers_001_82/Object_170": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/cone_003_111/Object_226": {
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/pneuWall_001_71/Object_146": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/start_001_85/Object_174": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_001_75/Object_154": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_002_86/Object_176": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_003_87/Object_178": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_004_88/Object_180": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_005_89/Object_182": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_006_90/Object_184": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_007_95/Object_194": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_008_92/Object_188": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:Sketchfab_model/root/GLTF_SceneRootNode/straight_009_97/Object_198": {
+"generate/physics": true,
+"physics/shape_type": 2
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1

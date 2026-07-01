@@ -1,3 +1,11 @@
 res://scenes/main.tscn
-res://scripts/player.gd
 res://scenes/player.tscn
+res://scripts/player.gd
+res://scripts/camera_3d.gd
+res://scripts/raycast_car.gd
+res://scenes/test_vehicle2.tscn
+res://scripts/test_vehicle_2.gd
+res://assets/testtrack/testtrack.tscn
+res://scenes/test_vehicle.tscn
+res://scripts/test_vehicle.gd
+res://scripts/wheel.gd
